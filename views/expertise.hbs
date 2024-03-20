@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <a href="/AddExpertise" class="mt-2 btn btn-success">add expertise</a>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">expertise name</th>
+                    <th scope="col">project image</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each expertise}}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{this.Ename}}</td>
+
+                    <td><img src="/images/{{this._id}}.jpg" 
+                            style="height: 50px; width: 50px;" /></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>

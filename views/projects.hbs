@@ -1,0 +1,25 @@
+<section>
+<div class="container">
+    <a href="/addproject" class="mt-2 btn btn-success">add projects</a>
+  <table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">project name</th>
+      <th scope="col">project link</th>
+      <th scope="col">project image</th>
+    </tr>
+  </thead>
+  <tbody>
+   {{#each projects}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.pname}}</td>
+      <td><a href="#">{{this.purl}}</a></td>
+      <td><img src="/project_images/{{this._id}}.jpg" style="height: 50px; width: 50px;"></td>
+    </tr>
+   {{/each}}
+  </tbody>
+</table>
+</div>
+</section>
